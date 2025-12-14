@@ -1,0 +1,41 @@
+name: CI/CD - Code Quality and Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install uv
+      run: pip install uv
+
+    - name: Install dependencies (with dev group)
+      run: uv sync --all-extras
+
+    - name: Check code formatting with Black
+      run: uv run black --check src tests
+
+    - name: Lint code with Ruff
+      run: uv run ruff check src tests
+
+    - name: Run tests with pytest and coverage
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      run: |
+        export PYTHONPATH=src:$PYTHONPATH
+        uv run pytest --cov=src/prompt_master tests

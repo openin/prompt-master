@@ -1,0 +1,230 @@
+.git
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+# C extensions
+*.so
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+# PyInstaller
+*.manifest
+*.spec
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+# Translations
+*.mo
+*.pot
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+# Flask stuff:
+instance/
+.webassets-cache
+# Scrapy stuff:
+.scrapy
+# Sphinx documentation
+docs/_build/
+# PyBuilder
+target/
+# Jupyter Notebook
+.ipynb_checkpoints
+# IPython
+profile_default/
+ipython_config.py
+# pyenv
+.python-version
+# pipenv
+Pipfile.lock
+# PEP 582
+__pypackages__/
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+# SageMath parsed files
+*.sage.py
+# Environments
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+# Spyder project settings
+.spyderproject
+.spyproject
+# Rope project settings
+.ropeproject
+# mkdocs documentation
+/site
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+# Pyre type checker
+.pyre/
+# UV - Python Package Manager
+.venv/
+venv/
+env/
+.uv/
+# IDE - Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+*.vsix
+# IDE - PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.gradle/
+# IDE - Eclipse
+.project
+.pydevproject
+.settings/
+.classpath
+.c9/
+*.launch
+.metadata/
+local.properties
+.recommenders/
+# IDE - Sublime Text
+*.sublime-project
+*.sublime-workspace
+# IDE - Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+*~
+.vim/
+# IDE - Emacs
+*~
+\#*\#
+.\#*
+*.elc
+auto-save-list/
+# IDE - Atom
+.atom/
+.apm/
+# IDE - NetBeans
+nbproject/
+.nb-gradle/
+*.swp
+*.swo
+# IDE - JetBrains (Generic)
+*.swp
+*.swo
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+# OS - macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+# OS - Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+.TemporaryItems/
+# OS - Linux
+*~
+.directory
+.Trash-*
+# FastAPI / Uvicorn
+*.sock
+*.pid
+*.log
+.uvicorn.pid
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.postgresql
+*.mysql
+# Environment variables and secrets
+.env.local
+.env.*.local
+.env.prod
+.env.prod.local
+.env.staging
+.env.staging.local
+.secrets/
+secrets.json
+# FastAPI specific
+.fastapi_cache/
+fastapi_cache/
+# Node modules (if using frontend tools)
+node_modules/
+package-lock.json
+yarn.lock
+# Docker
+.docker/
+.dockerignore
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.~*
+# IDE temporary files
+.vscode/extensions/
+.vscode/ipch/
+.vscode/ltex.hiddenFalsePositives/
+# Build and distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+# Project specific
+# Add your project-specific files below:
+# *.pdf
+# uploads/
+# downloads/
+# temp/
